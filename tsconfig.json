@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "lib": ["es6", "es2017", "dom"],
+    "target": "es5",
+    "baseUrl": "./",
+    "paths": {
+      "@truffle/*": ["types/*"]
+    }
+  },
+  "include": ["test/**/*", "types/*"],
+  "exclude": []
+}

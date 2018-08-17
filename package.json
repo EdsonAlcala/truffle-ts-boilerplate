@@ -1,0 +1,41 @@
+{
+  "name": "truffle-ts",
+  "version": "1.0.0",
+  "description": "A simple boilerplate to start coding smart contracts with Truffle and Typescript",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "",
+    "develop:watch": "truffle compile && npm run ts:generate && tsc && npm run solium && npm run clean:js",
+    "develop": "nodemon -e ts,sol --watch test --watch contracts --exec 'npm run develop:watch'",
+    "solium": "solium -d contracts",
+    "clean:js": "del-cli test/**/*.js",
+    "test:coverage": "tsc && solidity-coverage && istanbul check-coverage --statements 90 --branches 90 --functions 90 --lines 90",
+    "ts:generate": "sol-ts-generator --glob './build/contracts/*.json' --outDir './types'"
+  },
+  "keywords": [
+    "truffle"
+  ],
+  "author": "edson alcala",
+  "license": "ISC",
+  "dependencies": {
+    "sol-ts-generator": "^1.0.10",
+    "ts-node": "^7.0.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/mocha": "^5.2.5",
+    "bignumber.js": "^7.2.1",
+    "del-cli": "^1.1.0",
+    "nodemon": "^1.18.3",
+    "prettier": "^1.14.2",
+    "solidity-coverage": "^0.5.7",
+    "solium": "^1.1.8",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.14.0",
+    "typescript": "^3.0.1"
+  }
+}
