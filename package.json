@@ -2,10 +2,6 @@
   "name": "truffle-ts",
   "version": "1.0.0",
   "description": "A simple boilerplate to start coding smart contracts with Truffle and Typescript",
-  "main": "truffle-config.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "",

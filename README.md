@@ -1,4 +1,5 @@
-# truffle-ts-boilerplate
+# Truffle + Typescript boilerplate
+
 A simple boilerplate to start coding smart contracts with Truffle and Typescript
 
 ### Commands
