@@ -15,7 +15,7 @@ contract("Crowdsale", accounts => {
     it("should set an initial amount when created ", async () => {
       const expectedInitialAmount = 1000;
 
-      const initialAmount = await contractInstance.initialAmount2();
+      const initialAmount = await contractInstance.initialAmount();
 
       assert.equal(initialAmount.toNumber(), expectedInitialAmount);
     });

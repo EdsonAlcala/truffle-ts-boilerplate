@@ -3,9 +3,9 @@ pragma solidity ^0.4.24;
 import "../lib/Ownable.sol";
 
 contract Crowdsale is Ownable {
-    uint public initialAmount2;
+    uint public initialAmount;
 
     constructor(uint _initialAmount) public {
-        initialAmount2 = _initialAmount;
+        initialAmount = _initialAmount;
     }
 }
